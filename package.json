@@ -1,7 +1,7 @@
 {
   "name": "grunt-twigtojst",
   "description": "Exporting simple twig templates to jst",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "homepage": "https://github.com/kfiku/grunt-twigtojst",
   "author": {
     "name": "Grzegorz Klimek",

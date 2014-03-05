@@ -9,10 +9,6 @@
 'use strict';
 
 module.exports = function(grunt) {
-
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
-
   grunt.registerMultiTask('twigtojst', 'Exporting simple twig templates to jst', function() {
     var options = this.options({
 
@@ -41,15 +37,12 @@ module.exports = function(grunt) {
                                 '<% } %>')
       ;
       var ifs = content.match(/(<%|{{|{%) ?(.*) ?(%>|}}|%})/ig);
-      // console.log(ifs);
+
       if (ifs && ifs.length) {
         for (var i = 0; i < ifs.length; i++) {
           if(ifs[i].indexOf('or') >= 0 || ifs[i].indexOf('and') >= 0) {
             var singleIf = ifs[i].replace(/ or /ig, ' || ')
                                  .replace(/ and /ig, ' && ');
-
-            console.log(ifs[i]);
-            console.log(singleIf);
             content = content.replace(ifs[i], singleIf);
           }
         }
