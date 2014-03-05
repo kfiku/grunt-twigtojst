@@ -1,0 +1,45 @@
+{
+  "name": "grunt-twigtojst",
+  "description": "Exporting simple twig templates to jst",
+  "version": "0.1.0",
+  "homepage": "https://github.com/kfiku/grunt-twigtojst",
+  "author": {
+    "name": "Grzegorz Klimek",
+    "email": "kfiku.com@gmail.com",
+    "url": "kfiku.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kfiku/grunt-twigtojst"
+  },
+  "bugs": {
+    "url": "https://github.com/kfiku/grunt-twigtojst/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/kfiku/grunt-twigtojst/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-nodeunit": "~0.2.0",
+    "grunt": "~0.4.2",
+    "grunt-contrib-jst": "~0.6.0",
+    "lodash": "~2.4.1",
+    "lodash-node": "~2.4.1"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  },
+  "keywords": [
+    "gruntplugin"
+  ]
+}

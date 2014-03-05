@@ -1,0 +1,24 @@
+<div>
+    <div>
+        <div>
+            <div>
+                <img data-src="{{ el.image }}" alt="{{ el.name }}">
+            </div>
+            <div>
+                {# <img src="{{ el.image }}" class="gez-img" alt="{{ el.name }}"> #}
+                <div class="text-layer">
+                    <h3 class="gez-head">{{ el.name }}</h3>
+                    <p class="gez-lead">{{ el.lead }}</p>
+                    <a href="{{ path('games', {gameSlug: el.slug}) }}">
+                        {{ 'Read more'|trans }}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img data-src="{{ el.image }}" alt="{{ el.name }}">
+        <div>{{ el.name }}</div>
+    </div>
+</div>
