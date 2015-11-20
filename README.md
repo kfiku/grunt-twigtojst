@@ -32,6 +32,7 @@ grunt.initConfig({
       src: [
         'test1.html.twig',
         'test2.html.twig',
+        'test3.html.twig',
       ],
       dest: '.tmp/',
       ext: '.html'
@@ -44,8 +45,6 @@ grunt.initConfig({
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
 
 ## Release History
-_(Nothing yet)_
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/kfiku/grunt-twigtojst/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+0.1.4
+Add suport for removing blocks
 

@@ -28,8 +28,9 @@ exports.twigtojst = {
 
     var isFile1 = grunt.file.isFile('tmp/test1.html');
     var isFile2 = grunt.file.isFile('tmp/test2.html');
-    test.ok(isFile1 && isFile2, 'No generated htmls');
-
+    var isFile3 = grunt.file.isFile('tmp/test3.html');
+    test.ok(isFile1 && isFile2 && isFile3, 'No generated htmls');
+    console.log(isFile3);
     test.done();
   },
 

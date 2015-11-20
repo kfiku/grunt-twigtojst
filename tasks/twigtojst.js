@@ -35,6 +35,9 @@ module.exports = function(grunt) {
                                 '<% if($1) { %>')
                        .replace(/\{% ?endif ?%\}/ig, 
                                 '<% } %>')
+                       // blocks
+                       .replace(/\{% ?(end)?block ?[a-z0-9_\-]* ?%\}/ig, 
+                                '')
       ;
       var ifs = content.match(/(<%|{{|{%) ?(.*) ?(%>|}}|%})/ig);
 

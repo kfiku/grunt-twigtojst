@@ -38,6 +38,7 @@ module.exports = function(grunt) {
         src: [
           'test1.html.twig',
           'test2.html.twig',
+          'test3.html.twig',
         ],
         dest: 'tmp/',
         ext: '.html'

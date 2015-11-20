@@ -1,0 +1,12 @@
+<div>
+    {% block test_block %}
+    {% for item in seq %}
+        <h3>{{ item.name }}</h3>
+        {% if item.description %}
+            {% block test_block %}
+                <p>{{ item.description }}</p>
+            {% endblock %}
+        {% endif %}
+    {% endfor %}
+    {% endblock test_block %}
+</div>
