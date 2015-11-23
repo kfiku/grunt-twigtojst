@@ -26,7 +26,7 @@ module.exports = function(grunt) {
                        .replace(/\{#/ig, '<!--') // {# -> <!--
                        .replace(/#\}/ig, '-->')  // #} -> -->
                        // for
-                       .replace(/\{% ?for ([a-z0-9_\-\[\]\{\}\,\. ]+) in ([a-z0-9_\-]+) ?%\}/ig, 
+                       .replace(/\{% ?for ([a-z0-9_\-\[\]\{\}\,\. ]+) in ([a-z0-9_\-\.]+) ?%\}/ig, 
                                 '<% _.each($2, function($1) { %>')
                        .replace(/\{% ?endfor ?%\}/ig, 
                                 '<% }); %>')

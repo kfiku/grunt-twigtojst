@@ -9,4 +9,10 @@
         {% endif %}
     {% endfor %}
     {% endblock test_block %}
+    
+    {% if images %}
+        {% for image in images.more %}
+            <img src="{{ image }}" />
+        {% endfor %}
+    {% endif %}
 </div>
